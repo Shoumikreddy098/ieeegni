@@ -1,0 +1,320 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.txtcolor {
+  color: rgb(16, 106, 118);
+  text-decoration: underline;
+}
+.cardImg {
+  max-width: 500px;
+}
+
+.img3{
+  height: 43rem;
+  width: 400px;
+}
+
+.imd{
+ height: 450px;
+ width: 800px;
+ background-color: #bdbdbd;
+ padding: 20px;
+ border-radius:10px;
+}
+
+@media screen and (max-width: 600px) {
+  .img3{
+    height: 33rem;
+    width: 320px;
+  }
+  .img4{
+    width: 320px;
+  }
+  .evecard {
+    flex-direction: column;
+    padding: 2px;
+    height: 38rem;
+    width: 5rem;
+  }
+
+  .eveimg {
+    max-width: fit-content;
+  }
+  .heading {
+
+    font-size: 15px;
+    margin-left: 10px;
+    color: #fff;
+  }
+}
+
+.logobg {
+  background-color: rgba(248, 255, 254, 0.76);
+}
+.floatdiv {
+  border-radius: 40%;
+  transition: transform 10s ease;
+  cursor: pointer;
+}
+
+.floatdiv :hover {
+  transform: translateX(-10px) translateY(-20px);
+}
+
+.txt {
+  color: white;
+}
+.navBg {
+  background-color: #180d49;
+}
+
+
+@keyframes fade-slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide {
+  animation: fade-slide 1.2s ease-out forwards;
+}
+
+
+.animate-gradient-text {
+  background-size: 200% 200%;
+  animation: gradient-text 5s ease infinite;
+}
+
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  padding: 20px;
+}
+.cen{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.fontf{
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.fontt{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+li{
+  margin: 1rem;
+  margin-left: 1.5rem;
+}
+.info h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.info p {
+  margin: 5px 0 0;
+  font-size: 1em;
+  color: #666;
+}
+
+.fonta{
+
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 3rem;
+  font-style: normal;
+
+}
+
+.btn1 {
+  background-image: linear-gradient(
+    to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%
+  );
+  margin: 10px;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn1:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.heading {
+  font-size: 2.4rem;
+  color: #fff;
+  font-style: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .evecard {
+    flex-direction: column;
+    padding: 2px;
+    height: 38rem;
+    width: 5rem;
+  }
+  .wf {
+    width: 80vw;
+  }
+  .eveimg {
+    max-width: fit-content;
+  }
+  .heading {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: #fff;
+  }
+  .btn1 {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 2px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.5);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.5s forwards;
+}
+
+.animate-twinkle {
+  animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes softTwinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes softTwinkle {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.3); }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-softTwinkle {
+  animation: softTwinkle infinite alternate ease-in-out;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+/*.bluebg {
+  background-image: url("../src/assets/events/bluebg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}*/
+
+
