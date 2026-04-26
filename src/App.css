@@ -24,15 +24,34 @@ html, body, #root {
   scroll-behavior: smooth;
 }
 
+.background-poster,
 .background-video {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  background: #020617 url('/backgroundpic.jpg') center / cover no-repeat;
+  pointer-events: none;
+}
+
+.background-poster {
+  z-index: -2;
+}
+
+.background-video {
   object-fit: cover;
   z-index: -1;
-  pointer-events: none;
+  animation: videoFadeIn 350ms ease-out both;
+}
+
+@keyframes videoFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .content-overlay {

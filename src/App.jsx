@@ -1,5 +1,6 @@
 ﻿// src/App.jsx
 import './App.css';
+import { useEffect, useState } from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { Element } from 'react-scroll';
 
@@ -43,19 +44,30 @@ const App1 = () => {
 };
 
 const App = () => {
+  const [showVideo, setShowVideo] = useState(false);
+
+  useEffect(() => {
+    const timeout = window.setTimeout(() => setShowVideo(true), 300);
+    return () => window.clearTimeout(timeout);
+  }, []);
+
   return (
     <>
-<video
-  autoPlay
-  muted
-  loop
-  playsInline
-  preload="none"
-  poster="/images/bg.jpg"
-  className="background-video"
->
-  <source src="/video/bg.mp4" type="video/mp4" />
-</video>
+      <div className="background-poster" aria-hidden="true" />
+
+      {showVideo && (
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/backgroundpic.jpg"
+          className="background-video"
+        >
+          <source src="/video/bg.mp4" type="video/mp4" />
+        </video>
+      )}
 
       <div className="content-overlay relative z-10">
         <Router>
