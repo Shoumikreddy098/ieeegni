@@ -1,6 +1,6 @@
 import React from "react";
 import { CalendarDays, MapPin, ArrowRight, Info } from "lucide-react";
-import techImg from "../assets/tech.jpg";
+import techImg from "../assets/Tech.jpg";
 import { Link } from "react-router-dom";
 import orientation from "../assets/orientation.jpg";
 const futureEvents = [
