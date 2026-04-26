@@ -1,4 +1,4 @@
-// src/App.jsx
+﻿// src/App.jsx
 import './App.css';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { Element } from 'react-scroll';
@@ -23,7 +23,7 @@ import TechIgnition from './Pages/events/main/TechIgnition';
 import Team from './Pages/Team';
 import PreviousTeam from './Pages/PreviousTeam';
 import Tech from './Pages/tech';
-import Orientation from './Pages/Orientation';
+import Orientation from './Pages/orientation';
 
 const App1 = () => {
   return (
